@@ -1,46 +1,71 @@
 # Job Board Application - Backend
 
-This is the backend of the **Job Board Application** built using **Spring Boot** and **MySQL**.  
-It provides REST APIs for managing jobs, admin operations, search, filter, pagination, and applicant handling.
+Backend service for a full-stack **Job Board Application** built with **Spring Boot** and **MySQL**.
 
----
+This API handles:
 
-## Features
-
-- Admin login
-- Add new jobs
-- Update jobs
-- Delete jobs
-- Get all jobs
-- Get single job by ID
-- Search jobs by keyword
-- Filter jobs
-- Pagination support
-- View applicants for a job
-- MySQL database integration
-- Foreign key relationship between jobs and applicants
+- job management
+- admin login
+- keyword search
+- filtering
+- pagination
+- job applications
+- applicant retrieval
 
 ---
 
 ## Tech Stack
 
-- Java
-- Spring Boot
-- Spring Web
-- Spring Data JPA
-- Hibernate
-- MySQL
-- Lombok
-- Maven
+- **Java 21**
+- **Spring Boot 4.0.5**
+- **Spring Web MVC**
+- **Spring Data JPA**
+- **Spring Validation**
+- **MySQL**
+- **Lombok**
+- **Maven**
+
+---
+
+## Features
+
+### Job Management
+- Add a single job
+- Add multiple jobs
+- Update existing jobs
+- Delete jobs
+- Get all jobs
+- Get a single job by ID
+
+### Search and Filtering
+- Search jobs by keyword
+- Filter jobs by location and category
+- Paginate jobs using Spring `Pageable`
+
+### Admin
+- Admin login with email and password
+
+### Applications
+- Apply to a job
+- Store applicant details
+- View all job applications
+- View one application by ID
 
 ---
 
 ## Project Structure
 
 ```bash
-src/main/java/com/example/JobBoardApplication
-│
-├── Controller
-├── Service
-├── Repository
-└── Model
+JobBoardApplication/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/JobBoardApplication/
+│   │   │   ├── Controller/
+│   │   │   ├── Model/
+│   │   │   ├── Repository/
+│   │   │   └── Service/
+│   │   └── resources/
+│   │       └── application.properties
+│   └── test/
+├── pom.xml
+└── README.md
