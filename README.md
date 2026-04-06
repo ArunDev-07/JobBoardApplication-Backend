@@ -43,5 +43,4 @@ src/main/java/com/example/JobBoardApplication
 ├── Controller
 ├── Service
 ├── Repository
-├── Model
-└── Config
+└── Model
